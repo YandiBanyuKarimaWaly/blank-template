@@ -1,0 +1,29 @@
+{
+	"name": "blank",
+	"description": "An opinionated set of dependency and structure for a javascript projects.",
+	"version": "0.0.0",
+	"main": "dist/index.js",
+	"author": {
+		"name": "Yandi Banyu Karima Waly",
+		"email": "yandi@karima.xyz",
+		"url": "https://yandi.karima.xyz/"
+	},
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"dev": "concurrently -k \"tsc --watch\" \"nodemon --delay 1 build/index.js\"",
+		"build": "tsc",
+		"build:dev": "tsc",
+		"build:dist": "tsc"
+	},
+	"devDependencies": {
+		"@types/jest": "^27.4.1",
+		"@types/node": "^17.0.25",
+		"concurrently": "^7.1.0",
+		"jest": "^27.5.1",
+		"nodemon": "^2.0.15",
+		"ts-jest": "^27.1.4",
+		"tslib": "^2.4.0",
+		"typescript": "^4.7.0-dev.20220423"
+	}
+}
